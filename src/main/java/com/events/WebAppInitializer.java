@@ -1,3 +1,4 @@
+
 package com.events;
 
 import javax.servlet.ServletContext;
@@ -21,6 +22,8 @@ public class WebAppInitializer implements WebApplicationInitializer {
 		dispatcher.setLoadOnStartup(1);
 		dispatcher.addMapping("*.html");
 		dispatcher.addMapping("*.pdf");
+		dispatcher.addMapping("*.json");
+		
 		
 	}
 
